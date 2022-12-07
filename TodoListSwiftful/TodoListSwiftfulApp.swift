@@ -11,7 +11,10 @@ import SwiftUI
 struct TodoListSwiftfulApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          // To make sure all the app is in the navigation, set navigation view here
+          NavigationView {
+            ListView()
+          }
         }
     }
 }
